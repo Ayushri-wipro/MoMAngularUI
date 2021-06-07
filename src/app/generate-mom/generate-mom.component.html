@@ -1,0 +1,38 @@
+<div style="text-align: center;">
+    <form style="text-align: center;" (ngSubmit)="onSubmit()" style="align-items: center;">
+  
+      <div style="align-items: center;">
+  
+        <div> <label>
+            Meeting id:
+          </label>
+  
+  
+          <input type="text" placeholder=meeting_id><br>
+        </div>
+  
+  
+        <div style="margin-top: 10px; margin-right: 100px;"><label>Meeting Date and time:</label>
+          <input type="date">
+        </div>
+      </div>
+      <div style="margin-top: 10px; margin-left: 70px;margin-bottom: 10px ;">
+        <label class="mr-2">Select Transcipt:</label>
+        <input type="file" name="file">
+      </div>
+  
+      <div  style="margin-top: 10px; margin-right: 80px;margin-bottom: 10px ;" > 
+        <label>
+          Meeting context:
+        </label>
+  
+  
+        <textarea name="comment" placeholder=meeting_context>
+        </textarea><br>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Generate MoM</button>
+  
+    </form>
+  
+  </div>
